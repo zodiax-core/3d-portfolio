@@ -4,11 +4,11 @@ const About = () => {
   return (
     <div className="about-section" id="about">
       <div className="about-me">
-        <h3 className="title">About Me</h3>
-        <p className="para">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-          dolores numquam iusto Ratione earum ducimus autem id iure pariatur
-          dolorum quae maiores.
+        <h3 className="title">About Us</h3>
+        <p className="para"> 
+          Zodiax offers expert services in web development, graphic design, video editing, SEO,
+          and UI/UX design. Focused on creativity and functionality, 
+          the agency delivers tailored solutions to elevate businesses and enhance their online presence.
         </p>
       </div>
     </div>
