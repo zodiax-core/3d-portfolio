@@ -15,43 +15,44 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                 <h4>Senior Designer</h4>
+                <h5>Freelauncer</h5>
               </div>
-              <h3>20XX</h3>
+              <h3>5 years</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              I have worked with multiple companies as a Graphic Designer,
+              gaining extensive experience in creating impactful visuals and 
+              branding solutions. 
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Web Developer</h4>
+                <h5>Mexbird Technologies</h5>
               </div>
-              <h3>20XX</h3>
+              <h3>2 years</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+              I have 2 years of experience as a Senior Developer at Mexbird Technologies,
+              where I specialized in creating robust, scalable digital solutions. I honed
+              my skills in delivering high-quality, efficient, and innovative projects.
             </p>
           </div>
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Position In Company</h4>
-                <h5>Company Name</h5>
+                <h4>Founder and Ceo</h4>
+                <h5>Zodiax</h5>
               </div>
               <h3>NOW</h3>
             </div>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-              labore sit non ipsum temporibus quidem, deserunt eaque officiis
-              mollitia ratione suscipit repellat.
+               Here <span>TAYYAB ASIF</span> As CEO of Zodiax, I lead a team of talented 
+               professionals in providing top-notch services in web development, 
+               graphic design, video editing, SEO, and UI/UX design. My focus is
+               on delivering innovative solutions tailored to meet the unique needs of each client.
             </p>
           </div>
         </div>
