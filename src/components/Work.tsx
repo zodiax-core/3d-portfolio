@@ -74,7 +74,7 @@ const Work = () => {
         </h2>
         <div className="work-flex">
           {workItems.slice(0, 6).map((item, index) => (
-            <div className="work-box" key={index}>
+            <div className="work-box\" key={index}>
               <div className="work-info">
                 <div className="work-title">
                   <h3>0{index + 1}</h3>
