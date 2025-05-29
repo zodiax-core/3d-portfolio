@@ -2,12 +2,14 @@ import "./styles/Work.css";
 import WorkImage from "./WorkImage";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useGSAP } from "@gsap/react";
+import { useEffect, useRef } from "react";
 
-gsap.registerPlugin(useGSAP);
+gsap.registerPlugin(ScrollTrigger);
 
 const Work = () => {
-  useGSAP(() => {
+  const timelineRef = useRef<gsap.core.Timeline | null>(null);
+
+  useEffect(() => {
     let translateX: number = 0;
     function setTranslateX() {
       const box = document.getElementsByClassName("work-box");
@@ -23,7 +25,7 @@ const Work = () => {
 
     setTranslateX();
 
-    let timeline = gsap.timeline({
+    timelineRef.current = gsap.timeline({
       scrollTrigger: {
         trigger: ".work-section",
         start: "top top",
@@ -35,21 +37,24 @@ const Work = () => {
       },
     });
 
-    timeline.to(".work-flex", {
+    timelineRef.current.to(".work-flex", {
       x: -translateX,
       duration: 40,
       delay: 0.2,
     });
+
+    return () => {
+      timelineRef.current?.kill();
+    };
   }, []);
 
-    const workItems = [
+  const workItems = [
     { title: "Aura By Apple", category: "Design", tools: "Figma" },
     { title: "Spotify", category: "Design , UI/UX", tools: "Figma" },
     { title: "Crtical Thinking", category: "Design", tools: "Adobe Illustrator" },
     { title: "Ace", category: "Design", tools: "Figma" },
     { title: "ZYNO", category: "Web Devolopment", tools: "react , Vue , Tailwind , Node" },
     { title: "Amazon Prime", category: "Redesign", tools: "Adobe Illustrator, Photoshop" },
-
   ];
 
   const workImages = [
